@@ -1,0 +1,180 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+header
+{
+  width: 100%;
+  background-color: black;
+  color: white;
+  height: auto;
+  padding: 20px 20px 20px;
+}
+
+header img
+{
+  float: left;
+}
+
+
+.filterNav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+
+}
+
+.filterNav li {
+    float: left;
+}
+
+.filterNav li a {
+    display: block;
+    padding: 8px;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+}
+
+html
+{
+  font-family: 'Oswald', sans-serif;
+}
+
+body
+{
+  background-color: #fbfbfb;
+}
+
+footer
+{
+  height: 100px;
+  background-color: black;
+  color: white;
+  clear: both;
+}
+
+.admin_header
+{
+  text-align: center;
+  background-color: black;
+  color: white;
+  padding-bottom: 20px;
+  height: 80px;
+}
+
+.admin_header img
+{
+  display: block;
+  margin: 0 auto;
+}
+
+.logo
+{
+  padding-top: 20px;
+  width: 100px;
+  margin: 0 auto;
+
+}
+
+
+.admin_nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 150px;
+}
+
+.admin_nav li a {
+  padding: 10px;
+    display: block;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+}
+
+
+.welcome_message
+{
+  margin-top: 50px;
+  margin-bottom: 50px;
+  text-align: center;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.movie_container
+{
+  float: left;
+  padding-bottom: 50px;
+  padding-right: 50px;
+  padding-left: 50px;
+  padding-top: 50px;
+  width: 100px;
+}
+
+
+.movie_container img
+{
+  display: block;
+  margin: 0 auto;
+  width: 100px;
+  height: auto;
+}
