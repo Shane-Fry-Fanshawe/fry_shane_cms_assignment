@@ -124,17 +124,25 @@ footer
     list-style-type: none;
     margin: 0;
     padding: 0;
-    width: 150px;
+    width: 200px;
 }
 
 .admin_nav li a {
-  padding: 10px;
+    padding: 15px;
     display: block;
-    background-color: black;
+    background-color: rgba(0,0,0,0.8);
     color: white;
     text-decoration: none;
+    border-bottom: 1px solid white;
 }
 
+.delete
+{
+  text-decoration: none;
+  float: left;
+  margin-left: 40px;
+  margin-top: 40px;
+}
 
 .welcome_message
 {
@@ -146,15 +154,83 @@ footer
 
 
 
+.user_info {
+  width: 95%;
+  margin-left: 10px;
+  border: 1px solid #00bff3;
+  border-radius: 4px;
+  padding: 10px;
+}
+
+form{
+  /* background-color: #00bff3; */
+  border-radius: 10px;
+  width: 50%;
+  margin-left: 20px;
+  padding-top: 10px;
+  margin: 0 auto;
+  background-color: rgba(0,0,0,0.1);
+  padding-bottom: 20px;
+}
+
+label {
+  margin-top: 3px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  font-weight: bold;
+  float: left;
+}
+
+input[value] {
+  color: #00536a;
+}
+
+#edit_user_title
+{
+  margin-bottom: 20px;
+  margin-top: 20px;
+  color: black;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.8em;
+}
 
 
+.profile_image
+{
+  display: block;
+  margin: 0 auto;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
 
 
+input[type=submit] {
+    padding:10px 15px;
+    background:#00bff3;
+    color: white;
+    border:0 none;
+    cursor:pointer;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    width: 95%;
+    margin: 0 auto;
+    display: block;
+}
+
+input[type=submit]:hover {
+    padding:10px 15px;
+    background: #00536a;
+
+}
 
 
-
-
-
+.edit_icon
+{
+  margin-left: 15px;
+  float: left;
+  padding-bottom: 5px;
+}
 
 
 

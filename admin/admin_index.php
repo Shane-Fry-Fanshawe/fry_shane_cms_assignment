@@ -20,22 +20,22 @@
 		</div>
 		</header>
 
+		<div class="admin_nav">
+			<ul>
+			<li><a href="admin_index.php">Home</a></li>
+			<li><a href="admin_editall.php">Edit Movie</a></li>
+			<li><a href="admin_addmovie.php">Add Movie</a></li>
+			<li><a href="admin_createuser.php">Create User</a></li>
+			<li><a href="admin_edituser.php">Edit User</a></li>
+			<li><a href="admin_deleteuser.php">Fired</a></li>
+			<li><a href="phpscripts/caller.php?caller_id=logout">Sign Out</a></li>
+			</ul>
 
+			</div>
 
 
 	<?php echo "<h2 class=\"welcome_message\">Hi - {$_SESSION['user_name']}</h2>"; ?>
 
-
-<div class="admin_nav">
-	<ul>
-
-	<li><a href="admin_createuser.php">Create User</a></li>
-	<li><a href="admin_edituser.php">Edit User</a></li>
-	<li><a href="admin_deleteuser.php">Fired</a></li>
-	<li><a href="phpscripts/caller.php?caller_id=logout">Sign Out</a></li>
-	</ul>
-
-	</div>
 
 
 
