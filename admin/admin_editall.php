@@ -37,8 +37,10 @@
 		</div>
 
 
+
+
 		<form action="admin_editall.php" method="post" enctype="multipart/form-data">
-<label>Movies:</label>
+<label>Select</label>
 			<select name="editList">
 				<option value="">Select A Movie</option>
 				<?php
