@@ -35,10 +35,10 @@
 
 		if(!is_string($getMovies)){
 			while($row = mysqli_fetch_array($getMovies)){
-				echo "<div class=\"movie_container\"> <img src=\"images/{$row['movies_cover']}\" alt=\"{$row['movies_title']}\">
-					<h2>{$row['movies_title']}</h2>
-					<p>{$row['movies_year']}</p>
-					<a href=\"details.php?id={$row['movies_id']}\">More Details...</a>
+				echo "<div class=\"movie_container\"> <img class=\"movie_image\" src=\"images/{$row['movies_cover']}\" alt=\"{$row['movies_title']}\">
+					<h2 class=\"movie_text\">{$row['movies_title']}</h2>
+					<p class=\"movie_year\">{$row['movies_year']}</p>
+					<a href=\"details.php?id={$row['movies_id']}\"><p class=\"movie_year\">More Details...</p></a>
 					<br><br></div>";
 			}
 		}else{
