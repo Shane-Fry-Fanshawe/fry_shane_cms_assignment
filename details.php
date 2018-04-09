@@ -12,16 +12,20 @@
 <head>
 <meta charset="UTF-8">
 <title>Details</title>
+<link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 <body>
 	<?php
 		if(!is_string($getSingle)){
 			$row = mysqli_fetch_array($getSingle);
-			echo "<img src=\"images/{$row['movies_cover']}\" alt=\"{$row['movies_title']}\">
-				<h2>{$row['movies_title']}</h2>
-				<p>{$row['movies_year']}</p>
-				<p>{$row['movies_storyline']}</p>
-				<a href=\"index.php\">Back...</a>";
+			echo "<img class=\"details_img\" src=\"images/{$row['movies_cover']}\" alt=\"{$row['movies_title']}\">
+				<h2 class=\"detials_txt\">{$row['movies_title']}</h2>
+				<p class=\"detials_txt\">{$row['movies_year']}</p>
+				<p class=\"detials_txt\">{$row['movies_storyline']}</p>
+				<video width=\"1080\" height=\"720\" controls>
+				<source src=\"videos/{$row['movies_trailer']}\" type=\"video/mp4\">
+				</video>
+				<a href=\"index.php\"><p class=\"back\">Back...</p></a>";
 		}else{
 			echo "<p class=\"error\">{$getSingle}</p>";
 		}

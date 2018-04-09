@@ -263,8 +263,34 @@ a
   margin-top: 100px;
 }
 
+video
+{
+	display: block;
+	margin: 0 auto;
+}
+
 .movie_image
 {
   width: 100%;
   border-radius: 10px;
+}
+.back
+{
+	clear: both;
+	font-size: 2.5em;
+
+}
+
+
+.details_img
+{
+	width: 600px;
+	float: right;
+}
+
+.detials_txt
+{
+	text-align: center;
+	font-size: 2em;
+	margin-bottom: 40px;
 }

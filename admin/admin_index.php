@@ -22,6 +22,7 @@
 
 		<div class="admin_nav">
 			<ul>
+				<li><a href="../index.php">Movies</a></li>
 			<li><a href="admin_index.php">Home</a></li>
 			<li><a href="admin_editall.php">Edit Movie</a></li>
 			<li><a href="admin_addmovie.php">Add Movie</a></li>
