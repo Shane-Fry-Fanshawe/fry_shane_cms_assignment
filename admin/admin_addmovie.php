@@ -25,8 +25,25 @@
 <head>
 <meta charset="UTF-8">
 <title>Add Movie</title>
+<link rel="stylesheet" type="text/css" href="../css/main.css">
 </head>
 <body>
+	<div class="admin_nav">
+		<ul>
+		<li><a href="admin_index.php">Home</a></li>
+		<li><a href="admin_editall.php">Edit Movie</a></li>
+		<li><a href="admin_addmovie.php">Add Movie</a></li>
+		<li><a href="admin_createuser.php">Create User</a></li>
+		<li><a href="admin_edituser.php">Edit User</a></li>
+		<li><a href="admin_deleteuser.php">Fired</a></li>
+		<li><a href="phpscripts/caller.php?caller_id=logout">Sign Out</a></li>
+		</ul>
+
+		</div>
+
+
+
+
 	<h1>Welcome Company Name</h1>
 	<?php if(!empty($message)){echo $message;} ?>
 	<form action="admin_addmovie.php" method="post" enctype="multipart/form-data">
@@ -45,11 +62,11 @@
 		<label>Movie Release</label>
 		<input name="release" type="text" value=""><br><br>
 		<select name="genList">
-			<option value="">Please select a genre</option> 
-			<?php 
+			<option value="">Please select a genre</option>
+			<?php
 				while($row = mysqli_fetch_array($genQuery)){
 					echo "<option value=\"{$row['genre_id']}\">{$row['genre_name']}</option>";
-				} 
+				}
 			?>
 		</select><br><br><br>
 		<input type="submit" name="submit" value="Add Movie">

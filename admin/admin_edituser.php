@@ -26,27 +26,52 @@
 <head>
 <meta charset="UTF-8">
 <title>CMS Portal</title>
+<link rel="stylesheet" type="text/css" href="../css/main.css">
 </head>
 <body>
-	<h1>Welcome Company Name to your edit account page</h1>
+	<div class="admin_nav">
+		<ul>
+		<li><a href="admin_index.php">Home</a></li>
+		<li><a href="admin_editall.php">Edit Movie</a></li>
+		<li><a href="admin_addmovie.php">Add Movie</a></li>
+		<li><a href="admin_createuser.php">Create User</a></li>
+		<li><a href="admin_edituser.php">Edit User</a></li>
+		<li><a href="admin_deleteuser.php">Fired</a></li>
+		<li><a href="phpscripts/caller.php?caller_id=logout">Sign Out</a></li>
+		</ul>
+
+		</div>
+
+	<section id="edit_user">
+		<h2 id="edit_user_title">EDIT USER</h2>
+
+		<img class="profile_image" src="images/user.svg" alt="template profile pic" height="100" width="100">
+
 	<?php if(!empty($message)){echo $message;} ?>
 	<form action="admin_edituser.php" method="post">
+
+				<img class="edit_icon" src="images/user-name.svg" alt="icon" height="20" width="20">
 	<label>First Name:</label>
-	<input type="text" name="fname" value="<?php echo $found_user['user_fname']; ?>
+	<input class="user_info" type="text" name="fname" value="<?php echo $found_user['user_fname']; ?>
 "><br><br>
-	
+
+<img class="edit_icon" src="images/profile.svg" alt="icon" height="20" width="20">
 	<label>Username:</label>
-	<input type="text" name="username" value="<?php echo $found_user['user_name']; ?>
+	<input class="user_info" type="text" name="username" value="<?php echo $found_user['user_name']; ?>
 "><br><br>
 
+<img class="edit_icon" src="images/lock.svg" alt="icon" height="20" width="20">
 	<label>Password:</label>
-	<input type="text" name="password" value="<?php echo $found_user['user_pass']; ?>
+	<input class="user_info" type="text" name="password" value="<?php echo $found_user['user_pass']; ?>
 "><br><br>
 
+<img class="edit_icon" src="images/email.svg" alt="icon" height="20" width="20">
 	<label>Email:</label>
-	<input type="text" name="email" value="<?php echo $found_user['user_email']; ?>
+	<input class="user_info" type="text" name="email" value="<?php echo $found_user['user_email']; ?>
 "><br><br>
-	<input type="submit" name="submit" value="Edit Account">
+	<input class="user_info" type="submit" name="submit" value="Edit Account">
 	</form>
+</section>
+
 </body>
 </html>
